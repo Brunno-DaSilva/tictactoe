@@ -1,0 +1,217 @@
+/*
+    Author: Bruno DaSilva
+    Homework: W07D2 Tic Tac Toe
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Mansalva&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Mansalva", cursive;
+}
+.center-items {
+  margin-top: 10vh;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(8deg);
+}
+h1 {
+  padding: 10px;
+  margin: 5px;
+  font-family: "Mansalva", cursive;
+  font-size: 5rem;
+  color: #1070a4;
+  text-align: center;
+}
+h1 span {
+  opacity: 0.5;
+}
+#container {
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-board {
+  margin: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.player-one,
+.player-two {
+  margin: 10px;
+  width: 15vw;
+  height: 15vh;
+  font-size: 2.5rem;
+  color: #3575ac;
+  /* background-color: #3575ac; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 8px;
+}
+
+.player-two {
+  color: #448bc9;
+}
+
+#scoreP2,
+#scoreP1 {
+  font-size: 3.5rem;
+}
+
+.top-div,
+.middle-div,
+.bottom-div {
+  display: flex;
+}
+
+.firstDiv,
+.secondDiv,
+.thirdDiv {
+  width: 12vw;
+  height: 12vh;
+  text-align: center;
+  border: solid 8px #1070a4;
+  padding-top: 20px;
+}
+
+.firstDiv,
+.secondDiv,
+.thirdDiv {
+  border-bottom: none;
+}
+.secondDiv,
+.thirdDiv {
+  border-left: none;
+}
+
+.top-div .firstDiv,
+.top-div .secondDiv,
+.top-div .thirdDiv {
+  border-top: none;
+}
+
+.bottom-div .firstDiv,
+.bottom-div .secondDiv,
+.bottom-div .thirdDiv {
+  border-bottom: none;
+}
+
+.top-div .firstDiv,
+.middle-div .firstDiv,
+.bottom-div .firstDiv {
+  border-left: none;
+}
+
+.top-div .thirdDiv,
+.middle-div .thirdDiv,
+.bottom-div .thirdDiv {
+  border-right: none;
+}
+
+.playerMove {
+  z-index: 2;
+  align-self: center;
+  vertical-align: middle;
+}
+.x:after {
+  font-size: 5rem;
+  color: #1070a4;
+  content: "X";
+}
+.o:before {
+  font-size: 5rem;
+  color: #1070a4;
+  content: "O";
+  opacity: 0.5;
+}
+
+/*Modal Style*/
+
+#modal-textbox,
+#modal-textbox2,
+#modal-textbox3,
+#modal-textbox4 {
+  background-color: white;
+  height: 350px;
+  width: 550px;
+  padding: 2%;
+  line-height: 120%;
+  border-radius: 2px;
+  margin: 150px auto;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#modal-textbox h1,
+#modal-textbox2 h1,
+#modal-textbox3 h1,
+#modal-textbox4 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  padding: 15px;
+}
+#modal-textbox h2,
+#modal-textbox2 h2,
+#modal-textbox3 h2,
+#modal-textbox4 h2 {
+  margin-top: 10%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  padding: 15px;
+  color: #044279;
+}
+#modal,
+#modal2,
+#modal3,
+#modal4 {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  display: none;
+}
+
+#modal-footer {
+  text-align: right;
+}
+
+.modal-buttons {
+  padding: 14px 18px;
+  background-color: #1b4280;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  font-family: "Arial";
+  cursor: pointer;
+}
+
+/*END - Modal Style*/
+svg {
+  margin-bottom: -35px;
+}
+footer {
+  height: 10vh;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #1070a4;
+}

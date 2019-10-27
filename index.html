@@ -1,0 +1,145 @@
+<!--    
+    Author: Bruno DaSilva
+    Homework: W07D2 Tic Tac Toe
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tic Tac Toe</title>
+    <!--     CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
+    <!--FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <!--     jQuery must come first -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Tic <span>Tac</span> Toe</h1>
+    </div>
+
+    <br />
+    <!--Player 1-->
+    <div id="modal">
+      <div id="modal-textbox">
+        <h1>Congratulations</h1>
+        <div>
+          <h2>- Player X -</h2>
+          <h2>You have won the game</h2>
+        </div>
+        <div id="modal-footer">
+          <button class="modal-buttons" id="close" href="#">Close</button>
+        </div>
+      </div>
+    </div>
+    <!--Player 2-->
+    <div id="modal2">
+      <div id="modal-textbox2">
+        <h1>Congratulations</h1>
+        <div>
+          <h2>- Player O -</h2>
+          <h2>You have won the game</h2>
+        </div>
+        <div id="modal-footer">
+          <button class="modal-buttons" id="close2" href="#">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!--You can't play here  2-->
+    <div id="modal3">
+      <div id="modal-textbox3">
+        <h1>Sorry Invalid Move <i class="fas fa-hand-paper"></i></h1>
+        <div>
+          <h2>- Play in an empty Slot-</h2>
+        </div>
+        <div id="modal-footer">
+          <button class="modal-buttons" id="close3" href="#">Close</button>
+        </div>
+      </div>
+    </div>
+    <!--IT IS a TIE-->
+    <div id="modal4">
+      <div id="modal-textbox4">
+        <h1>This round is a tie</h1>
+        <div>
+          <h2><i class="fas fa-poo-storm"></i> Try Again!</h2>
+        </div>
+        <div id="modal-footer">
+          <button class="modal-buttons" id="close4" href="#">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Player Score Board-->
+    <!-- <div class="score-board">
+      <div class="player-one">
+        <div>
+          <p>Player 1: X</p>
+        </div>
+        <div id="scoreP1">
+          <p>0</p>
+        </div>
+      </div>
+      <div class="player-two">
+        <div>
+          <p>Player 2: O</p>
+        </div>
+        <div id="scoreP2">
+          <p>0</p>
+        </div>
+      </div>
+    </div> -->
+    <!-- END-- Player Score Board-->
+    <div class="center-items">
+      <div id="container">
+        <div class="top-div">
+          <div id="1" class="playerMove firstDiv"></div>
+          <div id="2" class="playerMove secondDiv"></div>
+          <div id="3" class="playerMove thirdDiv"></div>
+        </div>
+        <div class="middle-div">
+          <div id="4" class="playerMove firstDiv"></div>
+          <div id="5" class="playerMove secondDiv"></div>
+          <div id="6" class="playerMove thirdDiv"></div>
+        </div>
+        <div class="bottom-div">
+          <div id="7" class="playerMove firstDiv"></div>
+          <div id="8" class="playerMove secondDiv"></div>
+          <div id="9" class="playerMove thirdDiv"></div>
+        </div>
+      </div>
+    </div>
+
+    <svg viewBox="0 0 100 25">
+      <path fill="#1070a4" opacity="0.5" d="M0 30 V15 Q30 3 80 15 V30z"></path>
+      <path fill="#1070a4" d="M0 30 V12 Q30 17 55 12 T100 11 V30z"></path>
+    </svg>
+
+    <footer>
+      <p>&copy 2019 Bruno DaSilva Tic Tac Toe App</p>
+    </footer>
+
+    <!--Js File -->
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
