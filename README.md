@@ -1,5 +1,11 @@
-# tictactoe
+# Tic Tac Toe
 
-Tic Tac Toe Game built with HTML, CSS, JaveScript and jQuery, jQuery UI. 
+### Tools:
+
+    1 - HTML
+    2 - CSS
+    3 - JaveScript
+    4 - jQuery
+    5 - jQuery UI
 
 #### Demo: https://dasilvabrunotexas.github.io/tictactoe/
