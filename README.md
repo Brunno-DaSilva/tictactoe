@@ -8,4 +8,4 @@
     4 - jQuery
     5 - jQuery UI
 
-#### Demo: https://dasilvabrunotexas.github.io/tictactoe/
+### Demo: https://brunno-dasilva.github.io/tictactoe/
